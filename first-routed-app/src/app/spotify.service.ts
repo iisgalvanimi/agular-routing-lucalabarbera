@@ -12,7 +12,7 @@ export class SpotifyService {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track`;
     const headers = new HttpHeaders({
       Authorization:
-        'Bearer curl -X "GET" "https://api.spotify.com/v1/search?q=roses&type=track" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer BQCP8IqsfetqmaXvCkhQ-djcMcOQL85YEnpFYwYBXJLrZ5AMe0clGX2ghH_n4YHNBlsHFy9b-dzyr5PYLmpEOZeGHt3mOoijO9YFpPNN3nmCSDE5Kfo-SrNjlvPnG4CPXmUAZyNyxpNIjUXdE2I82vNSLWDK1NG-8L1eBag8Hthz8dzA"'
+        'Bearer BQCpULnoVneVNt0cj0Tkj-zBFvDqk3Gbf7yri4ubllsYPcIwDx3ByCvMMUBrgvw028GqKVkShqlHyW6IxaVIs8m28O--qBbSjeb6S1whaVRExXJCnNzwJLE7aQSAIV9I2KtejJBrmP7I1_rL05iTRs5kebMQbVpUGJylQplBJ3YxROdh'
     });
 
     let obsTracks = this.http.get(url, { headers });
