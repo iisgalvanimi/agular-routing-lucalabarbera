@@ -11,7 +11,7 @@ export class AppComponent {
   query: string;
   title = 'first-routed-app';
   obsTrack: Observable<Object>;
-  results: Object;
+  results: any;
   // faccio iniettare lo spotify service e faccio una ricerca
   constructor(public spotify: SpotifyService) {
 
