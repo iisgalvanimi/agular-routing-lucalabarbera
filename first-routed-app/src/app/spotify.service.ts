@@ -24,9 +24,7 @@ export class SpotifyService {
     return this.http.get(url, { headers });
   }
    getArtist(id: string) {
-    const url = `https://api.spotify.com/v1/artist/${id}`;
-   const headers = new HttpHeaders({Authorization: environment.oauthToken});
-
+    const url = `https://api.spotify.com/v1/artists/${id}`;
     return this.http.get(url, { headers });
   }
 
