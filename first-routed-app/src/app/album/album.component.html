@@ -1,1 +1,22 @@
-<p>album works!</p>
+<div *ngIf="album">
+<p><a href (click)="back()">Back</a></p>
+
+<img src="{{ album.images[1].url }}">
+
+
+
+<P>
+ARTISTA <a [routerLink]="['/artists', album.artists[0].id]">{{album.artists[0].name}}</a>
+</P>
+    <h1>Tracce:</h1>
+    <div *ngFor='let a of album.tracks.items'>
+      <a [routerLink]="['/tracks', a.id]">
+
+        	{{a.name}}
+
+				</a>
+    </div>
+    <br>
+</div>
+
+
